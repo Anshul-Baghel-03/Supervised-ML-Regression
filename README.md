@@ -1,53 +1,82 @@
-Supervised ML Regression
+# 📊 Supervised ML Regression – Yes Bank Stock Closing Price Prediction  
 
-YES BANK STOCK CLOSING PRICE PREDICTION.
 
-PROJECT SUMMARY- Yes Bank was a very reputable bank till 2018. After 2018, the bank came under the umbrella of risk-inflated banks because of the fraud case by Rana Kapoor. This project would help not only yes bank but all those banks who want to predict their future and are in a conundrum for their future. So Machine Learning is helping us to resolve the issue of all those companies and firms who want to gather some courage in order to survive in the market for a longer time. By predicting the price with the acquaintance of Machine Learning especially linear Regression and other regressors, which helped firms and companies to sustain in the market. In this project, the monthly Open, Close, Low, and High prices of Yes Bank stock have helped to train the model on which learning occurred and then the respective prediction occurs.
+![Yes Bank Logo](https://upload.wikimedia.org/wikipedia/commons/d/d1/Yes_Bank_Logo-01.png)
 
-PROBLEM STATEMENT- Yes Bank is a well-known bank in the Indian financial domain. Since 2018, it has been in the news because of the fraud case involving Rana Kapoor. Owing to this fact, it was interesting to see how that impacted the stock prices of the company and whether Time Series models or any other predictive models can do justice to such situations. This Dataset has the monthly stock prices of the bank since its inception and includes closing, opening, highest, and lowest stock prices of every month. The main objective is to predict the closing stock price of the month.
+---
 
-VARIABLE DESCRIPTION- In the given dataset there are 185 rows and 5 features, Features descriptions are as follows-
+## 📌 Project Summary  
+Yes Bank was a very reputable bank till 2018. After 2018, the bank came under the umbrella of risk-inflated banks because of the fraud case by Rana Kapoor.  
 
-Date-: Date denotes the date of investment(date contains month and year for a particular price.)
+This project would help not only Yes Bank but also other banks who want to predict their future stock prices and reduce uncertainty. By leveraging Machine Learning — especially Linear Regression and other regressors — we can provide insights that help firms sustain in the market.  
 
-Open-: It is the price at which a stock started trading.
+The dataset includes monthly Open, Close, Low, and High prices of Yes Bank stock, which were used to train the models and make predictions.  
 
-High-: It is the highest price at which a stock is traded during a period.
+---
 
-Low-: It is the minimum price at which a stock is traded during a period.
+## 🛑 Problem Statement  
+Yes Bank is a well-known bank in the Indian financial domain. Since 2018, it has been in the news because of the fraud case involving Rana Kapoor. Owing to this, it was interesting to analyze how the scandal impacted the stock prices and whether predictive models could provide accurate forecasts.  
 
-Close-: The closing price refers to a stock's trading price closed at the end of a trading day. It's a dependent variable that we need to predict from our respective ML models. The closing price is calculated as the weighted average price of the last 30 minutes, i.e. from 3:00 PM to 3:30 PM in case of equity.
+The dataset contains monthly stock prices (Open, High, Low, Close) since the bank’s inception. The main objective is to predict the **closing stock price of the month**.  
 
-OBJECTIVE- The objective of this project is to predict the yes bank stock closing price of the month which includes the following steps-
+---
 
-Loading the data into a data frame.
-Cleaning the data.
-Exploratory analysis and visualizations.
-Feature Manipulation and Selection.
-Train Test Split.
-Model Implementation.
-Selecting the best model.
-Model Deployment.
-Conclusion-
+## 📊 Variable Description  
 
-Closing Price of a stock refers to the final price at which the stock is traded on a particular stock exchange on a given trading day. It is the last price at which the stock is bought or sold during the trading session.
+- **Date**: Month and year for a particular price.  
+- **Open**: Price at which the stock started trading.  
+- **High**: Highest price traded during a period.  
+- **Low**: Minimum price traded during a period.  
+- **Close**: Final trading price of the stock (dependent variable).  
 
-Importance: The closing price is an important metric used by investors, analysts, and traders to evaluate a company’s financial health, market value, and stock performance. It is also used to calculate other important metrics such as the daily price change, market capitalization, and trading volume.
+---
 
-For an Average Investor: An average investor sees investing in stocks for long-term purposes and in premium stocks that have proved to be quality and high-performing stocks over the years. For such investors, the daily closing price may not hold as high importance as for an average trader.
+## 🎯 Objective  
+The objective of this project is to predict the Yes Bank stock closing price of the month through the following steps:  
 
-For a Traders: For traders and analysts, the information on the closing price of stocks is essential to make sure that they make sound trading decisions and maximize returns on their portfolios.
+1. Loading the data into a DataFrame  
+2. Cleaning the data  
+3. Exploratory analysis and visualizations  
+4. Feature manipulation and selection  
+5. Train-Test split  
+6. Model implementation  
+7. Selecting the best model  
+8. Model deployment  
 
-Models Implemented
+---
 
-I have implemented six models/Algorithms- Linear Regression,Lasso Reguralization,Ridge Reguralization,Elastic Net, Random Forest Regressor, XG BOSST Regressor.
+## 📌 Importance of Closing Price  
 
-The best performing model to predict the closing stock price of yes bank is Ridge Reguralization having training and testing accuracy as 95% and 94% respectively in untuned condition having lowest RMSE(.219), with cross-validation and hyperparameter tuning(Tuned Model) its training and testing accuracy is 97% and 94% respectively which tends to generalized fitting and prone to slight-risk of overfitting.
+- **Investors**: Used to evaluate company health, market value, and performance.  
+- **Traders**: Helps in making trading decisions and maximizing returns.  
+- **Analysts**: Essential for calculating metrics like market capitalization and trading volume.  
 
-All Independent Features(High,Low,Open) are Strongly correlated with each other as well with the depenedent Feature(Close) also.
+---
 
-According to the best performing model Feature Low is of utmost importance.
+## 🤖 Models Implemented  
 
-Evaluation Metrics used to choose the best performing model is r2_score and RMSE.
+- Linear Regression  
+- Lasso Regularization  
+- Ridge Regularization  
+- Elastic Net  
+- Random Forest Regressor  
+- XGBoost Regressor  
 
-The results indicate adopting supervised Learning Algorithms to identify stock manipulation using a labeled dataset based on a Fraud case is promising.
+✅ **Best Performing Model**: **Ridge Regularization**  
+- Training Accuracy: 95%  
+- Testing Accuracy: 94%  
+- RMSE: 0.219 (untuned)  
+- After hyperparameter tuning: Training 97%, Testing 94%  
+
+📌 **Key Insights**  
+- Features **High, Low, Open** are strongly correlated with **Close**.  
+- Feature **Low** has the highest importance.  
+- Evaluation metrics used: **R² Score** and **RMSE**.  
+
+---
+
+## 📈 Results  
+The Ridge Regularization model proved to be the most effective in predicting Yes Bank’s closing stock prices.  
+This demonstrates how supervised learning algorithms can be applied to financial data for better risk management and fraud impact analysis.  
+
+---
